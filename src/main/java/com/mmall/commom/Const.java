@@ -15,9 +15,20 @@ public class Const {
         int ROLE_ADMIN = 1 ; //管理员
     }
 
+    public interface Cart{
+        int CHECKED = 1; //选中状态
+        int UN_CHECKED = 0;
+
+        String LIMIT_NUM_FAIL = "LIMIT_NUM_FAIL";
+        String LIMIT_NUM_SUCCESS = "LIMIT_NUM_SUCCESS";
+
+    }
+
     public interface ProductListOrderBy{
         Set<String> PRICE_ASC_DESC = Sets.newHashSet("price_desc","price_asc");
     }
+
+
     public enum ProductStatusEnum{
         ON_SALE(1,"在线状态");
         private String value;
